@@ -89,5 +89,11 @@ public class Planet {
 		yyPos = yyPos + dt * yyVel; 
 	}
 
+	// Draw the planet's image at the Planet's position.
+	public void draw() {
+		String imagePath = "./images/" + imgFileName;
+		StdDraw.picture(xxPos, yyPos, imagePath);
+	}
+
 }
 
